@@ -84,6 +84,11 @@ const Header = (props) => {
                                     </li>
                                     */}
                                     <li className="nav-item">
+                                        <Link href="/#use-cases" className="nav-link js-scroll-trigger">
+                                            <span>Use Cases</span>
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
                                         <Link href="/#support" className="nav-link js-scroll-trigger">
                                             <span>FAQ</span>
                                         </Link>
