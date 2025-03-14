@@ -12,6 +12,7 @@ import Counters from "../components/Sections/Counters";
 import Team from "../components/Sections/Team";
 import Screenshots from "../components/Sections/Screenshots";
 import Support from "../components/Sections/Support";
+import UseCases from "../components/Sections/UseCases";
 import Subscribe from "../components/Sections/Subscribe";
 import Blog from "../components/Sections/Blog";
 import Pricing from "../components/Sections/Pricing";
@@ -39,6 +40,7 @@ const Index = () => (
         {/* <Team /> */}
         {/* <Screenshots className="bg-grey" /> */}
         <Support />
+        <UseCases />
         {/* <Subscribe /> */}
         {/* <Blog /> */}
         <Pricing className="bg-grey" />

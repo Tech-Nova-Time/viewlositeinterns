@@ -258,13 +258,6 @@ const Support = (props) => {
                 </Row>
                 
                 <div className="empty-30"></div>
-                
-                <Row>                    
-                <Col className="col-12">
-    <p className="text-center mb-0">Still have a question? Email help@viewloapp.com or <a href="mailto:help@viewloapp.com"><strong>Ask your question here</strong></a></p>
-</Col>
-                </Row>
-                
             </Container>
             
         </section>
