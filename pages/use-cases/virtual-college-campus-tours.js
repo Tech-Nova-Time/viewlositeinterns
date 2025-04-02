@@ -20,26 +20,38 @@ const VirtualCollegeCampusTours = () => (
       <Container>
         <Row className="align-items-center">
           <Col lg={12} className="text-center mb-5">
-            <img 
-              src="/images/viewlologo.jpg" 
-              alt="ViewLo Logo" 
-              className="mb-4"
-              style={{ maxHeight: "80px" }}
-              onError={(e) => {e.target.onerror = null; e.target.src = "https://via.placeholder.com/200x80?text=ViewLo"}}
-            />
-            <h1 className="display-4 fw-bold mb-4">Virtual College Campus Tours</h1>
+           
+            <div className="position-relative">
+              <div className="curved-bg" style={{
+                position: 'absolute',
+                top: '-600px',
+                left: 0,
+                width: '100%',
+                height: '700px',
+                backgroundColor: '#3dbb8e',
+                borderRadius: '0 0 50% 50%/0 0 100% 100%',
+                transform: 'scaleX(1.8)',
+                zIndex: -1,
+                border: '4px solid #1f8760',
+                borderTop: 'none'
+              }}></div>
+              <h1 className="display-4 fw-bold mb-4 text-white" style={{marginTop: '30px'}}>College Campus Tours</h1>
+            </div>
           </Col>
         </Row>
         <Row className="align-items-center">
           <Col lg={6} className="mb-4 mb-lg-0">
+            <h3 className="mb-4 fw-bold" style={{color: '#3dbb8e'}}>GET THE CAMPUS EXPERIENCE IN A PERSONALIZED AND IMMERSIVE WAY... ANYTIME, ANYWHERE!</h3>
             <p className="lead mb-4">
-              Experience our innovative virtual campus tours, where prospective students can take immersive, 
-              live guided tours of college campuses from anywhere.
+            We know that choosing a college is one of the most pivotal decisions an adolescent can make--and that 
+            requires being able to imagine yourself on campus. However, visiting various colleges across the globe 
+            is out of reach for many families, and most virtual campus tours don't show you the experiences you really want to see.
             </p>
-            <p className="mb-4">
-              Our platform connects future students with campus tour guides in real-time, 
-              allowing them to explore facilities, ask questions, and get a genuine feel for 
-              campus life without the need to travel.
+            <p className="lead mb-4">
+            With Viewlo, you can be connected with a current student at the school of your choice and get a real-time, 
+            personalized campus tour. Viewlo provides an audio feature to ask your broadcaster questions and live command 
+            buttons to adjust your viewing experience, so you can get a glimpse into this next chapter of your life from 
+            anywhere in the world!
             </p>
             <Button variant="primary" size="lg" className="me-3">Schedule a Tour</Button>
             <Link href="/pricing">
@@ -47,11 +59,16 @@ const VirtualCollegeCampusTours = () => (
             </Link>
           </Col>
           <Col lg={6}>
-            <img 
-              src="/images/campus-tour.jpg" 
-              alt="Virtual College Campus Tour" 
+            <video 
+              src="/images/campus-tour.mp4"
+              alt="College Campus Tours"
               className="img-fluid shadow"
-              onError={(e) => {e.target.onerror = null; e.target.src = "https://via.placeholder.com/600x400?text=Campus+Tour"}}
+              controls
+              autoPlay
+              playsInline
+              muted
+              loop
+              style={{width: '100%', height: 'auto'}}
             />
           </Col>
         </Row>
@@ -66,4 +83,3 @@ const VirtualCollegeCampusTours = () => (
 );
 
 export default VirtualCollegeCampusTours;
-
